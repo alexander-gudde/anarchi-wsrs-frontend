@@ -1,21 +1,14 @@
-﻿const DEFAULT_BACKEND_URL = "https://wallet-safety-report-services.onrender.com";
+const DEFAULT_BACKEND_PATH = "/wsrs";
+
 export function getBackendUrl() {
-  const raw = process.env.NEXT_PUBLIC_BACKEND_URL || DEFAULT_BACKEND_URL;
-  try {
-    const parsed = new URL(raw);
-    if (
-      parsed.hostname === "wallet-safety-report-services.onrender.com" &&
-      parsed.protocol === "https:"
-    ) {
-      return parsed.origin;
-    }
-    console.warn("Invalid NEXT_PUBLIC_BACKEND_URL host. Falling back to default backend.");
-    return DEFAULT_BACKEND_URL;
-  } catch {
-    console.warn("Invalid NEXT_PUBLIC_BACKEND_URL format. Falling back to default backend.");
-    return DEFAULT_BACKEND_URL;
+  const raw = String(process.env.NEXT_PUBLIC_BACKEND_PATH || DEFAULT_BACKEND_PATH).trim();
+  if (raw.startsWith("/") && !raw.startsWith("//") && !raw.includes("?") && !raw.includes("#")) {
+    return raw.replace(/\/+$/, "") || DEFAULT_BACKEND_PATH;
   }
+  console.warn("Invalid NEXT_PUBLIC_BACKEND_PATH. Falling back to secured same-origin routing.");
+  return DEFAULT_BACKEND_PATH;
 }
+
 export function backendApi(path) {
   const cleanPath = String(path || "").startsWith("/")
     ? path
