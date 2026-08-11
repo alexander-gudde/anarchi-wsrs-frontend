@@ -1,0 +1,7 @@
+schema_version: 1
+wave: wsrs-frontend-secured-ingress-v1
+artifact: anarchi-wsrs-frontend
+inputs: [browser-request, same-origin-wsrs-contract]
+outputs: [wsrs-user-experience]
+verification: npm ci && npm run lint && npm run build
+forbidden_outputs: [direct-render-origin-request, arbitrary-backend-origin]
