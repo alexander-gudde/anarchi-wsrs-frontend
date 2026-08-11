@@ -1,0 +1,26 @@
+schema_version: 1
+identity:
+  organization: AnarchI
+  component: WSRS Frontend
+  canonical_name: anarchi-wsrs-frontend
+  responsibility: public WSRS presentation and intake experience
+  authority: presentation-only
+repository:
+  owner: AnarchI-Technologies
+  name: anarchi-wsrs-frontend
+  package: anarchi-wsrs-frontend
+  visibility: private
+  status: live-canonical
+dependencies:
+  backend: {repository: AnarchI-Technologies/Wallet-Safety-Report-Services, path: /wsrs, routing: same-origin-only}
+  runtime: [next]
+boundaries:
+  owns: [public presentation, intake user experience, browser-side report interaction]
+  forbidden_authority: [direct-origin-backend-selection, spine-routing, payment-settlement, report-generation, arbitrary-shell]
+validation:
+  deterministic: npm ci && npm run lint && npm run build
+  behavior_preservation: required
+lineage:
+  preserved_by: git-history
+  retired_backend_origin: wallet-safety-report-services.onrender.com
+  canonical_backend_path: /wsrs
