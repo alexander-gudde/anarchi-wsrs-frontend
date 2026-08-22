@@ -14,7 +14,6 @@ export default function PrivacyPolicyPage() {
         <p><strong>Business Name:</strong> AnarchI Technologies</p>
         <p><strong>Website:</strong> https://anarchi-tech.com</p>
         <p><strong>Contact:</strong> admin@anarchi-tech.com</p>
-        <p><strong>Business Address:</strong> 3850 S Meridian Ave, Wichita, KS 67217</p>
         <h2>1. Overview</h2>
         <p>
           AnarchI Technologies (“AnarchI,” “we,” “our,” or “us”) provides deterministic software
@@ -239,8 +238,7 @@ export default function PrivacyPolicyPage() {
         <p>
           <strong>AnarchI Technologies</strong><br />
           Email: <strong>admin@anarchi-tech.com</strong><br />
-          Website: <strong>https://anarchi-tech.com</strong><br />
-          Business Address: <strong>3850 S Meridian Ave, Wichita, KS 67217</strong>
+          Website: <strong>https://anarchi-tech.com</strong>
         </p>
       </article>
     </main>

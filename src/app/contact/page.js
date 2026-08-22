@@ -15,13 +15,8 @@ export default function ContactPage() {
           or safety concerns, contact AnarchI Technologies.
         </p>
         <h2>Email</h2>
-        <p><strong>admin@anarchi-tech.com</strong></p>
-        <h2>Business Address</h2>
-        <p>
-          <strong>AnarchI Technologies</strong><br />
-          3850 S Meridian Ave<br />
-          Wichita, KS 67217
-        </p>
+        <p><a href="mailto:admin@anarchi-tech.com"><strong>admin@anarchi-tech.com</strong></a></p>
+        <p>For now, email is our customer support channel.</p>
         <h2>Support Notes</h2>
         <ul>
           <li>Do not email seed phrases, private keys, recovery phrases, or wallet backup files.</li>

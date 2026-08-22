@@ -20,6 +20,9 @@
 .accessCard input { min-height: 48px; padding: 0.72rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: #8e8780; background: #0d0c12; }
 .accessCard button { min-height: 48px; border: 1px solid #413b3e; border-radius: 999px; color: #7f7873; background: #29262b; font-weight: 850; }
 .accessCard p { margin: 0; color: #928b84; font-size: 0.72rem; line-height: 1.5; }
+.recoveryCard { grid-template-columns: minmax(220px,0.8fr) minmax(250px,1fr); align-items: end; margin-top: 1rem; }
+.recoveryCard .cardTitle { margin: 0; }
+.recoveryCard p { grid-column: 1 / -1; }
 .previewCard { margin-top: 1rem; padding: 1.4rem; }
 .previewCard > div { display: flex; gap: 0.75rem; align-items: center; }
 .previewCard span { display: grid; }
@@ -30,4 +33,4 @@
 .honestyNote { display: flex; gap: 0.7rem; align-items: flex-start; margin-top: 1rem; padding: 1rem 1.2rem; border-color: rgba(159,105,198,0.26); }
 .honestyNote p { margin: 0; color: #aaa29a; font-size: 0.78rem; line-height: 1.55; }
 .honestyNote strong { color: #eee2d0; }
-@media (max-width: 760px) { .accessGrid { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .accessGrid { grid-template-columns: 1fr; } .recoveryCard { grid-template-columns: 1fr; } .recoveryCard p { grid-column: auto; } }

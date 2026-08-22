@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Fingerprint, LockKey, ShieldCheck, UserCirclePlus } from "@phosphor-icons/react/dist/ssr";
+import { ArrowRight, EnvelopeSimple, Fingerprint, LockKey, ShieldCheck, UserCirclePlus } from "@phosphor-icons/react/dist/ssr";
 import styles from "./account.module.css";
 
 export const metadata = {
@@ -37,6 +37,13 @@ export default function AccountPage() {
           <p>No wallet connection, seed phrase, or public profile is required to create an Anar-Core identity.</p>
         </form>
       </section>
+
+      <form id="forgot-password" className={`${styles.accessCard} ${styles.recoveryCard}`}>
+        <div className={styles.cardTitle}><EnvelopeSimple size={25} weight="duotone" /><div><small>Account recovery</small><h2>Forgot password?</h2></div></div>
+        <label>Email address<input type="email" autoComplete="email" placeholder="you@example.com" disabled /></label>
+        <button type="button" disabled>Recovery opens with public enrollment</button>
+        <p>The recovery entry point is reserved and linkable now. Email verification, reset-token expiry, session revocation, and audit controls will be wired before it accepts customer requests.</p>
+      </form>
 
       <section className={styles.previewCard}>
         <div><Fingerprint size={32} weight="duotone" /><span><small>Profile architecture preview</small><strong>Anar-Core / Organization / Membership</strong></span></div>

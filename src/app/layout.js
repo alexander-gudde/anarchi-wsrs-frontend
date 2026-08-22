@@ -20,7 +20,7 @@ export const metadata = {
     siteName: "AnarchI Technologies",
     title: "AnarchI Technologies | Truth verified. Trust earned.",
     description: "Deterministic software, visible evidence, and customer-controlled wallet safety reports.",
-    images: [{ url: "/brand/anarchi-hero-banner.png", width: 2048, height: 768, alt: "AnarchI Technologies" }],
+    images: [{ url: "/brand/anarchi-hero-banner.png", width: 1936, height: 808, alt: "AnarchI Technologies" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -40,7 +40,7 @@ export const metadata = {
 const MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         {MEASUREMENT_ID && (
           <> 

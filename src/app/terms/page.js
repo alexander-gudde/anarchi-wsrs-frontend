@@ -13,7 +13,6 @@ export default function TermsPage() {
         <p><strong>Effective Date:</strong> 8/21/2026</p>
         <p><strong>Business Name:</strong> AnarchI Technologies</p>
         <p><strong>Contact:</strong> admin@anarchi-tech.com</p>
-        <p><strong>Business Address:</strong> 3850 S Meridian Ave, Wichita, KS 67217</p>
         <h2>1. Agreement to These Terms</h2>
         <p>
           These Terms of Service govern your access to and use of AnarchI Technologies websites,

@@ -44,8 +44,7 @@ export default function AboutPage() {
         </p>
         <h2>Contact</h2>
         <p>
-          Email: <strong>admin@anarchi-tech.com</strong><br />
-          Address: <strong>3850 S Meridian Ave, Wichita, KS 67217</strong>
+          Email: <a href="mailto:admin@anarchi-tech.com"><strong>admin@anarchi-tech.com</strong></a>
         </p>
       </article>
     </main>

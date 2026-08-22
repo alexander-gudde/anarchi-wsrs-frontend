@@ -51,46 +51,40 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "AnarchI Technologies",
   url: "https://anarchi-tech.com",
-  logo: "https://anarchi-tech.com/brand/anarchi-gilded-lockup.png",
+  logo: "https://anarchi-tech.com/brand/anarchi-gilded-lockup-dark.png",
   description: "Deterministic software, visible evidence, and customer-controlled digital safety systems.",
   email: "admin@anarchi-tech.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "3850 S Meridian Ave",
-    addressLocality: "Wichita",
-    addressRegion: "KS",
-    postalCode: "67217",
-    addressCountry: "US",
-  },
 };
 
 export default function Home() {
   return (
     <main className="home-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c") }} />
-      <section className="brand-banner" aria-labelledby="brand-banner-title">
+      <section className="brand-banner" aria-label="AnarchI Technologies principles and systems artwork">
         <Image
           src="/brand/anarchi-hero-banner.png"
           alt="AnarchI Technologies — truth verified, freedom respected, future built"
-          width={2048}
-          height={768}
+          width={1936}
+          height={808}
           priority
           sizes="100vw"
         />
-        <div className="brand-banner-shade" />
-        <div className="brand-banner-copy">
+      </section>
+
+      <section className="hero-statement" aria-labelledby="brand-banner-title">
+        <div className="hero-statement-copy">
           <p className="eyebrow">Deterministic systems · visible proof</p>
           <h1 id="brand-banner-title">We build systems that earn trust.</h1>
           <p>
             Original software for people who want clear reasoning, customer control,
             and evidence they can inspect.
           </p>
-          <div className="hero-actions">
-            <Link className="gold-button" href="/wallet-safety-report#start-report">
-              Start a wallet report <ArrowRight weight="bold" aria-hidden="true" />
-            </Link>
-            <Link className="quiet-button" href="/products">Explore our systems</Link>
-          </div>
+        </div>
+        <div className="hero-actions">
+          <Link className="gold-button" href="/wallet-safety-report#start-report">
+            Start a wallet report <ArrowRight weight="bold" aria-hidden="true" />
+          </Link>
+          <Link className="quiet-button" href="/products">Explore our systems</Link>
         </div>
       </section>
 
