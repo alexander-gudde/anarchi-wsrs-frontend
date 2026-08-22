@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "About | AnarchI Technologies",
+  title: "About and operating principles",
   description: "About AnarchI Technologies and Wallet Safety Reports.",
+  alternates: { canonical: "/about" },
 };
 export default function AboutPage() {
   return (

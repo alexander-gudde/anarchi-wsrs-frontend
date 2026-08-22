@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "FAQ | AnarchI Technologies",
+  title: "Wallet Safety Report FAQ",
   description: "Frequently asked questions about AnarchI Wallet Safety Reports.",
+  alternates: { canonical: "/faq" },
 };
 export default function FAQPage() {
   return (
@@ -43,10 +44,31 @@ export default function FAQPage() {
           Action cards are customer-controlled recommendations, such as reviewing or revoking token approvals. They
           may include links, contract details, or transaction hints. You must verify everything before signing.
         </p>
-        <h2>Can I pay with card or crypto?</h2>
+        <h2>What do the three report options cost?</h2>
         <p>
-          AnarchI may offer both card/bank checkout and crypto checkout options. Available payment methods may vary
-          by provider, region, and service status.
+          The Basic Wallet Report is $5. The Full Standard Report is $25. A Deeper Look adds $5 to the
+          Standard Report, for a $30 total. Every order runs the full analysis; your selection controls
+          which report view is delivered.
+        </p>
+        <h2>Can I upgrade a Basic report?</h2>
+        <p>
+          Yes. The Full Standard upgrade is $20 during the first seven days, then $15, $10, and $5 in
+          successive seven-day windows. After 28 days the report is stale for current provenance and a
+          new analysis is required.
+        </p>
+        <h2>How do I pay?</h2>
+        <p>
+          Payment is processed through Stripe Checkout. Stripe shows eligible methods dynamically based
+          on your location, currency, device, and the methods available for the order. These may include
+          cards, Apple Pay, Google Pay, Link, Cash App Pay, bank payments, and eligible regional or
+          pay-later methods. Crypto and stablecoins are not currently accepted.
+        </p>
+        <h2>When and how is my report delivered?</h2>
+        <p>
+          Analysis starts after Stripe confirms payment and your intake is complete. Most reports are
+          targeted within 20 minutes; allow up to 60 minutes during high traffic or source-provider delays.
+          You receive an encrypted interactive digital report by secure email link, unlocked with the
+          report password you created. No physical product is shipped.
         </p>
         <h2>What happens if I consent to internal research?</h2>
         <p>

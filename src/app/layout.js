@@ -2,8 +2,37 @@ import "./globals.css";
 import SiteNav from "./components/SiteNav";
 import Script from "next/script";
 export const metadata = {
-  title: "AnarchI Technologies",
-  description: "Deterministic wallet safety reports and practical software tools.",
+  metadataBase: new URL("https://anarchi-tech.com"),
+  title: {
+    default: "AnarchI Technologies | Truth verified. Trust earned.",
+    template: "%s | AnarchI Technologies",
+  },
+  description: "Deterministic software and read-only wallet evidence built with clear boundaries, visible provenance, and customer control.",
+  applicationName: "AnarchI Technologies",
+  authors: [{ name: "AnarchI Technologies", url: "https://anarchi-tech.com" }],
+  creator: "AnarchI Technologies",
+  publisher: "AnarchI Technologies",
+  category: "technology",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://anarchi-tech.com",
+    siteName: "AnarchI Technologies",
+    title: "AnarchI Technologies | Truth verified. Trust earned.",
+    description: "Deterministic software, visible evidence, and customer-controlled wallet safety reports.",
+    images: [{ url: "/brand/anarchi-hero-banner.png", width: 2048, height: 768, alt: "AnarchI Technologies" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AnarchI Technologies | Truth verified. Trust earned.",
+    description: "Deterministic software, visible evidence, and customer-controlled wallet safety reports.",
+    images: ["/brand/anarchi-hero-banner.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
   icons: {
     icon: "/favicon.svg",
   },

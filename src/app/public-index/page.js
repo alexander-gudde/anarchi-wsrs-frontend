@@ -1,9 +1,10 @@
 ﻿import Link from "next/link";
 import "../policy.css";
 export const metadata = {
-  title: "Public Index | AnarchI Technologies",
+  title: "Public system index",
   description:
     "Public-facing site, assets, services, and disclosure boundaries for AnarchI Technologies.",
+  alternates: { canonical: "/public-index" },
 };
 const sitePages = [
   ["/", "Company homepage"],

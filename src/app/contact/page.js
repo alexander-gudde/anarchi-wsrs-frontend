@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "Contact | AnarchI Technologies",
+  title: "Contact",
   description: "Contact AnarchI Technologies for support, privacy, billing, and Wallet Safety Report questions.",
+  alternates: { canonical: "/contact" },
 };
 export default function ContactPage() {
   return (

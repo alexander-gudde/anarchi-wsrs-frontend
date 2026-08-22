@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "Refund Policy | AnarchI Technologies",
+  title: "Refund Policy",
   description: "Refund and cancellation policy for AnarchI Wallet Safety Reports.",
+  alternates: { canonical: "/refund-policy" },
 };
 export default function RefundPolicyPage() {
   return (
@@ -9,7 +10,7 @@ export default function RefundPolicyPage() {
       <article className="policy-card">
         <p className="policy-eyebrow">AnarchI Technologies</p>
         <h1>Refund Policy</h1>
-        <p><strong>Effective Date:</strong> 6/28/2026</p>
+        <p><strong>Effective Date:</strong> 8/21/2026</p>
         <p><strong>Contact:</strong> admin@anarchi-tech.com</p>
         <h2>1. Overview</h2>
         <p>
@@ -41,9 +42,8 @@ export default function RefundPolicyPage() {
         </p>
         <h2>6. Payment Processor Timing</h2>
         <p>
-          Approved refunds may take time to appear depending on Stripe, bank, card network, or crypto
-          payment processor timing. Crypto payments may be subject to network, provider, and currency
-          limitations.
+          Approved refunds may take time to appear depending on Stripe, your bank, and the payment method
+          used. Stripe controls the final posting time after AnarchI issues an approved refund.
         </p>
         <h2>7. Disputes and Chargebacks</h2>
         <p>

@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "Delivery Policy | AnarchI Technologies",
+  title: "Delivery Policy",
   description: "Digital delivery policy for AnarchI Wallet Safety Reports.",
+  alternates: { canonical: "/delivery-policy" },
 };
 export default function DeliveryPolicyPage() {
   return (
@@ -9,7 +10,7 @@ export default function DeliveryPolicyPage() {
       <article className="policy-card">
         <p className="policy-eyebrow">AnarchI Technologies</p>
         <h1>Delivery Policy</h1>
-        <p><strong>Effective Date:</strong> 6/28/2026</p>
+        <p><strong>Effective Date:</strong> 8/21/2026</p>
         <p><strong>Contact:</strong> admin@anarchi-tech.com</p>
         <h2>1. Digital Delivery</h2>
         <p>
@@ -18,8 +19,9 @@ export default function DeliveryPolicyPage() {
         </p>
         <h2>2. Delivery Method</h2>
         <p>
-          Reports may be delivered by email, secure link, encrypted report container, or another electronic
-          method selected by AnarchI. Delivery requires confirmed payment and completed intake.
+          Reports are delivered as an encrypted interactive digital report. AnarchI emails a secure viewer
+          link to the email address used at checkout; the report is unlocked with the customer-created report
+          password. We do not ship a physical product.
         </p>
         <h2>3. Report Password</h2>
         <p>
@@ -28,9 +30,9 @@ export default function DeliveryPolicyPage() {
         </p>
         <h2>4. Timing</h2>
         <p>
-          Reports are intended to generate after payment and intake are confirmed. Timing may vary based on
-          chain availability, data provider availability, report queue status, payment confirmation, and
-          technical conditions.
+          Analysis starts only after Stripe confirms successful payment and the required intake is complete.
+          Most reports are targeted for delivery within 20 minutes. Please allow up to 60 minutes during
+          high traffic, blockchain or source-provider delays, report queue conditions, or technical interruptions.
         </p>
         <h2>5. Delivery Problems</h2>
         <p>

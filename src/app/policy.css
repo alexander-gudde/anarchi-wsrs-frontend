@@ -1,82 +1,100 @@
-﻿.policy-page {
-  min-height: 100vh;
+.policy-page {
+  min-height: calc(100vh - 74px);
+  color: var(--ivory);
+  padding: clamp(1rem, 4vw, 3.5rem) max(1rem, calc((100vw - 1180px) / 2)) 5rem;
   background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), transparent 28rem),
-    linear-gradient(135deg, #050505 0%, #111 45%, #050505 100%);
-  color: #f7f7f7;
-  padding: 3rem 1.25rem 5rem;
+    radial-gradient(circle at 12% 0%, rgba(137, 81, 178, 0.13), transparent 31rem),
+    radial-gradient(circle at 90% 8%, rgba(203, 149, 48, 0.1), transparent 30rem);
 }
+
 .policy-card {
-  max-width: 980px;
+  position: relative;
+  overflow: hidden;
   margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.055);
-  border-radius: 28px;
-  padding: clamp(1.25rem, 4vw, 3rem);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(223, 190, 121, 0.22);
+  border-radius: 24px;
+  padding: clamp(1.4rem, 4vw, 3.8rem);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.045), transparent 26rem),
+    rgba(19, 17, 24, 0.88);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.3);
 }
-.policy-eyebrow {
+
+.policy-card::before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  right: -175px;
+  top: -190px;
+  border: 1px solid rgba(188, 137, 47, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 0 0 46px rgba(130, 76, 170, 0.03), 0 0 0 92px rgba(188, 137, 47, 0.025);
+}
+
+.policy-eyebrow,
+.policy-pill {
   margin: 0 0 0.75rem;
+  color: #dcb75f;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-size: 0.75rem;
-  color: #cfcfcf;
 }
+
 .policy-card h1 {
-  margin: 0 0 1.25rem;
-  font-size: clamp(2.2rem, 7vw, 4.75rem);
+  position: relative;
+  margin: 0 0 1.3rem;
+  max-width: 900px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.8rem, 7.5vw, 6.3rem);
   line-height: 0.95;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.055em;
+  background: linear-gradient(180deg, #fff1bd, #d7ad58 54%, #8f5d1b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 .policy-card h2 {
-  margin: 2rem 0 0.75rem;
-  font-size: 1.45rem;
+  margin: 2.25rem 0 0.75rem;
+  color: #f6e4af;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
 }
-.policy-card h3 {
-  margin: 1.25rem 0 0.55rem;
-  font-size: 1.05rem;
-}
+
+.policy-card h3 { margin: 1.4rem 0 0.55rem; color: #f7efe2; font-size: 1.02rem; }
 .policy-card p,
-.policy-card li {
-  color: #d7d7d7;
-  line-height: 1.72;
-}
-.policy-card ul {
-  padding-left: 1.25rem;
-}
-.policy-card strong {
-  color: #fff;
-}
+.policy-card li { color: #cbc2b6; line-height: 1.75; }
+.policy-card ul,
+.policy-card ol { padding-left: 1.25rem; }
+.policy-card strong { color: #fff8e8; }
+.policy-card a { color: #e5c571; text-decoration: underline; text-decoration-color: rgba(167, 109, 199, 0.7); text-underline-offset: 0.22em; }
+
 .policy-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
 }
+
 .policy-mini-card {
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(0, 0, 0, 0.22);
-  border-radius: 22px;
-  padding: 1.15rem;
+  padding: 1.3rem;
+  border: 1px solid rgba(214, 178, 102, 0.2);
+  border-radius: 18px;
+  background: rgba(9, 9, 14, 0.48);
 }
-.policy-mini-card h2 {
-  margin-top: 0.65rem;
+
+.policy-mini-card h2 { margin-top: 0.6rem; }
+.policy-pill { display: inline-flex; padding: 0.35rem 0.55rem; border: 1px solid rgba(156, 102, 197, 0.36); border-radius: 999px; color: #c59be3; background: rgba(112, 62, 148, 0.12); }
+
+.policy-callout {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.2rem;
+  border-left: 3px solid #d5ae58;
+  background: rgba(213, 174, 88, 0.07);
 }
-.policy-pill {
-  display: inline-flex;
-  margin: 0;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 999px;
-  padding: 0.35rem 0.6rem;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.08);
-  font-size: 0.78rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-@media (max-width: 850px) {
-  .policy-card-grid {
-    grid-template-columns: 1fr;
-  }
+
+@media (max-width: 760px) {
+  .policy-card-grid { grid-template-columns: 1fr; }
 }

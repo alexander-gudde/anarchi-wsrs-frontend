@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "Safety and Risk Policy | AnarchI Technologies",
+  title: "Safety and Risk Policy",
   description: "Safety and risk policy for AnarchI Wallet Safety Reports.",
+  alternates: { canonical: "/risk-policy" },
 };
 export default function RiskPolicyPage() {
   return (

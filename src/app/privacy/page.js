@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "Privacy Policy | AnarchI Technologies",
+  title: "Privacy Policy",
   description: "AnarchI Technologies privacy policy for Wallet Safety Reports and related services.",
+  alternates: { canonical: "/privacy" },
 };
 export default function PrivacyPolicyPage() {
   return (
@@ -9,7 +10,7 @@ export default function PrivacyPolicyPage() {
       <article className="policy-card">
         <p className="policy-eyebrow">AnarchI Technologies</p>
         <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> 6/28/2026</p>
+        <p><strong>Effective Date:</strong> 8/21/2026</p>
         <p><strong>Business Name:</strong> AnarchI Technologies</p>
         <p><strong>Website:</strong> https://anarchi-tech.com</p>
         <p><strong>Contact:</strong> admin@anarchi-tech.com</p>
@@ -55,8 +56,8 @@ export default function PrivacyPolicyPage() {
         </p>
         <h3>2.3 Payment Information</h3>
         <p>
-          Payments may be processed by third-party payment providers such as Stripe and/or crypto
-          payment processors. When you pay by card, bank, or another Stripe-supported method,
+          Payments are processed through Stripe Checkout. When you pay by card, bank, wallet, or another
+          eligible Stripe-supported method,
           payment information is handled by Stripe. AnarchI does not intend to store full card
           numbers, card security codes, or raw bank credentials on our servers.
         </p>
@@ -133,7 +134,6 @@ export default function PrivacyPolicyPage() {
         <p>We may share information with service providers that help us operate AnarchI, including:</p>
         <ul>
           <li>Payment processors, such as Stripe</li>
-          <li>Crypto payment processors, if used</li>
           <li>Hosting providers</li>
           <li>Database providers</li>
           <li>Email delivery providers</li>

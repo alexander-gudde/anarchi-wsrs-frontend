@@ -1,7 +1,8 @@
 ﻿import "../policy.css";
 export const metadata = {
-  title: "Terms of Service | AnarchI Technologies",
+  title: "Terms of Service",
   description: "Terms of Service for AnarchI Technologies and Wallet Safety Reports.",
+  alternates: { canonical: "/terms" },
 };
 export default function TermsPage() {
   return (
@@ -9,7 +10,7 @@ export default function TermsPage() {
       <article className="policy-card">
         <p className="policy-eyebrow">AnarchI Technologies</p>
         <h1>Terms of Service</h1>
-        <p><strong>Effective Date:</strong> 6/28/2026</p>
+        <p><strong>Effective Date:</strong> 8/21/2026</p>
         <p><strong>Business Name:</strong> AnarchI Technologies</p>
         <p><strong>Contact:</strong> admin@anarchi-tech.com</p>
         <p><strong>Business Address:</strong> 3850 S Meridian Ave, Wichita, KS 67217</p>
@@ -75,9 +76,10 @@ export default function TermsPage() {
         </ul>
         <h2>7. Payment</h2>
         <p>
-          Payment may be processed through third-party payment providers such as Stripe or crypto payment
-          processors. Prices are shown before purchase. Payment must be successfully confirmed before report
-          generation and delivery are completed.
+          Payment is processed through Stripe Checkout. Stripe displays the payment methods eligible for the
+          order based on currency, location, device, and the methods enabled for AnarchI. Prices are shown
+          before purchase. Payment must be successfully confirmed before report generation begins. Crypto and
+          stablecoin payments are not currently accepted.
         </p>
         <h2>8. Refunds and Cancellations</h2>
         <p>

@@ -1,0 +1,33 @@
+.page { min-height: calc(100vh - 74px); padding: clamp(1rem, 4vw, 3.5rem) max(1rem, calc((100vw - 1120px) / 2)) 5rem; color: var(--ivory); }
+.intro { max-width: 800px; }
+.intro > p,
+.cardTitle small,
+.previewCard small { margin: 0 0 0.6rem; color: #d8b45c; font-size: 0.7rem; font-weight: 850; letter-spacing: 0.17em; text-transform: uppercase; }
+.intro h1 { margin: 0; font-family: Georgia, serif; font-size: clamp(3.2rem, 8vw, 7rem); line-height: 0.95; letter-spacing: -0.055em; background: linear-gradient(180deg,#fff1bd,#d7ad58 55%,#8f5d1b); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.intro > span { display: block; max-width: 680px; margin-top: 1.2rem; color: #c9c0b5; line-height: 1.7; }
+.accessGrid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin-top: 2rem; }
+.accessCard,
+.previewCard,
+.honestyNote { border: 1px solid rgba(218,179,93,0.2); border-radius: 20px; background: rgba(20,18,26,0.82); }
+.accessCard { display: grid; gap: 0.85rem; padding: 1.4rem; }
+.cardTitle { display: flex; gap: 0.7rem; align-items: center; margin-bottom: 0.4rem; }
+.cardTitle svg,
+.previewCard svg,
+.honestyNote svg { color: #ab79cf; flex: 0 0 auto; }
+.cardTitle small { margin: 0; }
+.cardTitle h2 { margin: 0.25rem 0 0; color: #fff0c8; font-family: Georgia,serif; font-size: 1.6rem; }
+.accessCard label { display: grid; gap: 0.45rem; color: #e8dfd2; font-size: 0.78rem; font-weight: 760; }
+.accessCard input { min-height: 48px; padding: 0.72rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; color: #8e8780; background: #0d0c12; }
+.accessCard button { min-height: 48px; border: 1px solid #413b3e; border-radius: 999px; color: #7f7873; background: #29262b; font-weight: 850; }
+.accessCard p { margin: 0; color: #928b84; font-size: 0.72rem; line-height: 1.5; }
+.previewCard { margin-top: 1rem; padding: 1.4rem; }
+.previewCard > div { display: flex; gap: 0.75rem; align-items: center; }
+.previewCard span { display: grid; }
+.previewCard small { margin: 0; }
+.previewCard strong { margin-top: 0.2rem; color: #f2e4cf; font-family: Georgia,serif; font-size: 1.2rem; }
+.previewCard p { color: #aaa29a; line-height: 1.6; }
+.previewCard a { display: inline-flex; align-items: center; gap: 0.5rem; color: #e2c171; font-weight: 850; }
+.honestyNote { display: flex; gap: 0.7rem; align-items: flex-start; margin-top: 1rem; padding: 1rem 1.2rem; border-color: rgba(159,105,198,0.26); }
+.honestyNote p { margin: 0; color: #aaa29a; font-size: 0.78rem; line-height: 1.55; }
+.honestyNote strong { color: #eee2d0; }
+@media (max-width: 760px) { .accessGrid { grid-template-columns: 1fr; } }

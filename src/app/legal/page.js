@@ -1,12 +1,14 @@
 ﻿import Link from "next/link";
 import "../policy.css";
 export const metadata = {
-  title: "Legal | AnarchI Technologies",
+  title: "Legal and policy center",
   description: "Legal and policy documents for AnarchI Technologies.",
+  alternates: { canonical: "/legal" },
 };
 export default function LegalPage() {
   const links = [
     ["/privacy", "Privacy Policy"],
+    ["/data-proprietary-policy", "Data & Proprietary Information Policy"],
     ["/terms", "Terms of Service"],
     ["/refund-policy", "Refund Policy"],
     ["/delivery-policy", "Delivery Policy"],

@@ -1,0 +1,45 @@
+.page { min-height: calc(100vh - 74px); padding: 1.2rem max(1rem,calc((100vw - 1240px)/2)) 5rem; color: var(--ivory); }
+.hero { display: grid; grid-template-columns: 1fr 390px; gap: 3rem; align-items: center; padding: clamp(1.5rem,4vw,3.5rem); border: 1px solid rgba(218,179,93,.22); border-radius: 24px; background: rgba(20,18,26,.84); }
+.hero > div:first-child > p,
+.panel header p { margin: 0 0 .65rem; color: #d8b45c; font-size: .68rem; font-weight: 850; letter-spacing: .17em; text-transform: uppercase; }
+.hero h1 { margin: 0; font-family: Georgia,serif; font-size: clamp(3rem,7vw,6.5rem); line-height: .95; letter-spacing: -.055em; background: linear-gradient(180deg,#fff1bd,#d7ad58 55%,#8f5d1b); background-clip:text; -webkit-background-clip:text; color:transparent; }
+.hero > div:first-child > span { display:block; max-width:650px; margin-top:1rem; color:#c7beb3; line-height:1.65; }
+.profileSummary { padding:1.2rem; border:1px solid rgba(159,105,198,.3); border-radius:18px; background:#0f0e15; }
+.avatar { width:72px; height:72px; display:grid; place-items:center; margin-bottom:1rem; border:1px solid rgba(218,179,93,.3); border-radius:18px; color:#b27fd5; background:rgba(159,105,198,.08); }
+.profileSummary small { color:#938c85; font-size:.67rem; text-transform:uppercase; letter-spacing:.12em; }
+.profileSummary strong { display:block; margin-top:.25rem; color:#f0e3d0; font-family:var(--mono); }
+.profileSummary p { color:#aaa29a; }
+.profileSummary > span { display:flex; gap:.45rem; align-items:center; color:#b9d9bd; font-size:.75rem; }
+.metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.8rem; margin-top:1rem; }
+.metrics article { display:flex; gap:.7rem; align-items:center; padding:1rem; border:1px solid rgba(255,255,255,.08); border-radius:15px; background:rgba(18,16,24,.78); }
+.metrics svg { color:#aa79cc; }
+.metrics span { display:grid; }
+.metrics strong { color:#f2d37d; font-family:Georgia,serif; font-size:1.5rem; }
+.metrics small { color:#918a83; }
+.layout { display:grid; grid-template-columns:minmax(0,1fr) 390px; gap:1rem; margin-top:1rem; }
+.mainColumn,.sideColumn { display:grid; gap:1rem; align-content:start; }
+.panel { padding:1.3rem; border:1px solid rgba(218,179,93,.16); border-radius:18px; background:rgba(20,18,26,.82); }
+.panel header { display:flex; justify-content:space-between; gap:1rem; align-items:center; }
+.panel header svg { color:#aa79cc; }
+.panel header h2 { margin:0; color:#f9e8bd; font-family:Georgia,serif; font-size:1.65rem; }
+.contractList { margin-top:1rem; }
+.contractList > div { display:grid; grid-template-columns:42px 1fr; gap:.7rem; padding:.85rem 0; border-bottom:1px solid rgba(255,255,255,.07); }
+.contractList > div:last-child { border:0; }
+.contractList span { color:#9d6fc0; font-family:var(--mono); font-size:.68rem; }
+.contractList strong,.roleList strong { color:#eee2d0; }
+.contractList p,.roleList p { margin:.25rem 0 0; color:#9f9891; font-size:.78rem; line-height:1.5; }
+.roleList { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.7rem; margin-top:1rem; }
+.roleList > div { padding:1rem; border:1px solid rgba(255,255,255,.07); border-radius:13px; background:#0f0e15; }
+.panel dl { margin:1rem 0 0; }
+.panel dl > div { display:flex; justify-content:space-between; gap:1rem; padding:.68rem 0; border-bottom:1px solid rgba(255,255,255,.06); }
+.panel dt { color:#8f8881; font-size:.72rem; }
+.panel dd { margin:0; color:#d9cfc1; font-size:.72rem; text-align:right; }
+.panel ul { list-style:none; display:grid; gap:.7rem; padding:0; margin:1rem 0 0; }
+.panel li { display:flex; gap:.5rem; color:#bdb5ab; font-size:.76rem; }
+.panel li svg { color:#86b78d; }
+.schemaNote { display:flex; gap:.75rem; align-items:flex-start; margin-top:1rem; padding:1.1rem; border:1px solid rgba(159,105,198,.22); border-radius:16px; background:rgba(18,16,24,.76); }
+.schemaNote svg { color:#aa79cc; flex:0 0 auto; }
+.schemaNote strong { color:#eddec8; }
+.schemaNote p { margin:.35rem 0 0; color:#9c958e; font-size:.76rem; line-height:1.5; }
+@media(max-width:960px){.hero,.layout{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.metrics,.roleList{grid-template-columns:1fr}.hero{gap:1.5rem}.page{padding-inline:.75rem}}
